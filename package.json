@@ -1,0 +1,29 @@
+{
+  "name": "carbon-pulse",
+  "version": "1.0.0",
+  "description": "CarbonPulse - a context-aware assistant that helps people understand, track, and reduce their personal carbon footprint through a rule-based decision engine and an optional AI-narrated insight layer.",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "jest --runInBand",
+    "test:watch": "jest --watch",
+    "lint": "node -e \"console.log('No external linter configured. Code follows the style guide documented in README.md > Code Style.')\""
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.2.0",
+    "helmet": "^7.1.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.4"
+  },
+  "license": "MIT"
+}
